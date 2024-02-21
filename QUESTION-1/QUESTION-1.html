@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+            box-sizing: border-box;
+        }
+        .parent{
+            margin-top: 20px;
+            margin-left: 20px;;
+            width:220px;
+            height:220px;
+            border:2px solid black;
+            box-sizing: border-box;
+            position:relative;
+            
+           
+        }
+        .box1{
+             width:100px;
+             height:100px;
+             background-color: red;
+             border:1px solid yellow;
+             position: absolute;
+             top:25%;
+             left:25%;
+             display:flex;
+             justify-content: center;
+             align-items: center;
+             
+             
+        }
+        .box2{
+            width:100px;
+             height:100px;
+             background-color: red;
+             border:1px solid yellow;
+             
+             position: relative;
+             top:0;
+             left:0;
+
+             /* align-self: center; */
+        }
+        .box3{
+            width:100px;
+             height:100px;
+             background-color: red;
+             border:1px solid yellow;
+             position:absolute;
+             top:0;
+             right: 0;
+        }
+        .box4{
+            width:100px;
+             height:100px;
+             background-color: red;
+             border:1px solid yellow;
+             position:absolute;
+             bottom:0;
+             left:0;
+        }
+        .box5{
+            width:100px;
+             height:100px;
+             background-color: red;
+             border:1px solid yellow;
+             position:absolute;
+             bottom:0;
+             right:0;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="box1">A</div>
+        <div class="box2">B</div>
+        <div class="box3">C</div>
+        <div class="box4">D</div>
+        <div class="box5">E</div>
+    </div>
+</body>
+</html>
